@@ -32,7 +32,8 @@ program problema6
         x=1._pr
         y=1._pr
         i=0
-        write(37,'(I5,2x,3(E15.6,2x))') t,x,y,abs((sin(t)+cos(t)-x)/(sin(t)+cos(t))),abs((cos(t)-sin(t)-y)/(cos(t)-sin(t)))            do i=1,n
+        write(37,'(I5,2x,3(E15.6,2x))') t,x,y,abs((sin(t)+cos(t)-x)/(sin(t)+cos(t))),abs((cos(t)-sin(t)-y)/(cos(t)-sin(t)))
+            do i=1,n
                 m1=h*g(y)
                 l1=h*f(x)
             

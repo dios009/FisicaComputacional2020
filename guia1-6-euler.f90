@@ -15,7 +15,7 @@ program problema6
     
     
     !defino el numero de particiones y el tamanio del step
-    do k=1,3
+    do k=2,5
         n=10**k
         h=10._pr/real(n,pr) !t_final es 10
         print*,'Numero de particiones', n

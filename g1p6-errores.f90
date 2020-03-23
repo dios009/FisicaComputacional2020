@@ -17,7 +17,7 @@ integer(pr)                 :: n,i, k
 
 
 !defino el numero de particiones y el tamanio del step
-do k=1,12
+do k=1,10
     n=10**k
     h=10._pr/real(n,pr) !t_final es 10
     print*,'Numero de particiones', n

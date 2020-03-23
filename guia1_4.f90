@@ -1,7 +1,7 @@
 program problema4
     implicit none
 !use precision, only:  pr=>dp
-    integer, parameter      :: pr=selected_real_kind(15)
+    integer, parameter      :: pr=selected_real_kind(21)
     integer(pr)                 :: i
     real(pr)                :: exacto, traperror, simperror
 

@@ -15,7 +15,7 @@ program problema6
     
     
     !defino el numero de particiones y el tamanio del step
-    do k=1,2
+    do k=1,3
         n=10**k
         h=10._pr/real(n,pr) !t_final es 10
         print*,'Numero de particiones', n
@@ -32,8 +32,7 @@ program problema6
         x=1._pr
         y=1._pr
         i=0
-        print*, t,x,y
-            do i=1,n
+        write(37,'(I5,2x,3(E15.6,2x))') t,x,y,abs((sin(t)+cos(t)-x)/(sin(t)+cos(t))),abs((cos(t)-sin(t)-y)/(cos(t)-sin(t)))            do i=1,n
                 m1=h*g(y)
                 l1=h*f(x)
             
@@ -41,6 +40,7 @@ program problema6
                 x=x+m1
                 y=y+l1
                 print*, t,x,y
+                write(37,'(I5,2x,3(E15.6,2x))') t,x,y,abs((sin(t)+cos(t)-x)/(sin(t)+cos(t))),abs((cos(t)-sin(t)-y)/(cos(t)-sin(t)))
             end do
     !    print*,'EULER:', t,x,y
 !        print*,'ErrEuler:', abs((sin(t)+cos(t)-x)/(sin(t)+cos(t))),abs((cos(t)-sin(t)-y)/(cos(t)-sin(t)))

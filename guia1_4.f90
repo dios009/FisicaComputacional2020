@@ -14,7 +14,7 @@ program problema4
     open(38,file='err_simp.dat',status='replace')
 
 
-    do i  =2,26
+    do i  =2,30
         call f(2**i,traperror,simperror)
         write(37,'(I5,2x,3(E15.6,2x))') i,traperror
         write(38,'(I5,2x,3(E15.6,2x))') i,simperror

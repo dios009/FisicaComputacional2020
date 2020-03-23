@@ -59,8 +59,8 @@ contains
         terror=abs((exacto-h2*dot_product(trap, eval2))/exacto)
         serror=abs((exacto-h2*dot_product(simpson, eval2))/exacto)
 
-        print*,'Trapezoidal', h2*dot_product(trap, eval2) , 'ErrorAbs =', terror , abs(exacto-h2*dot_product(trap, eval2))
-        print*,'Simpson', h2*dot_product(simpson, eval2), 'ErrorAbs =', serror , abs(exacto-h2*dot_product(simpson, eval2))
+        print*,'Trapezoidal', h2*dot_product(trap, eval2) , 'ErrorAbs =', terror
+        print*,'Simpson', h2*dot_product(simpson, eval2), 'ErrorAbs =', serror
         print*, ''
 
         END SUBROUTINE

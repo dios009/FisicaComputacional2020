@@ -9,7 +9,7 @@ do i=1,150
     ep=ep/2._pr
     one=1._pr + ep
     if (one==1._pr) then
-        write(*,*) 'el epsilon de la maquina es:',2_pr*epsilon
+        write(*,*) 'el epsilon de la maquina es:',2_pr*ep
         exit
     endif
     

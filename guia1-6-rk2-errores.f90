@@ -4,7 +4,7 @@
 
 program problema6
     implicit none
-    integer, parameter      :: pr=selected_real_kind(13) !precision doble
+    integer, parameter      :: pr=selected_real_kind(6) !precision doble
     
     real(pr)                :: t,x,y,h !variables generales
     real(pr)                :: m1, m2, m3, m4, l1, l2, l3, l4 !variables de los metodos
@@ -12,7 +12,7 @@ program problema6
     integer(pr)                 :: n,i, k
     
     !Abro los archivos a donde voy a mandar los resultados
-        open(37,file='rk2-errores.dat',status='replace')
+        open(37,file='rk2-errores-single.dat',status='replace')
     
     
     !defino el numero de particiones y el tamanio del step
